@@ -1,0 +1,792 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/whitemod.css" id="theme">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<br>
+					<h2>Desarrollo de un software libre para
+						procesar y analizar ensayos modales
+						experimentales.</h2>
+					<img src="img/logo.png" alt="", width="200px">
+
+					<h4>ESCUELA DE INGENIERÍAS INDUSTRIALES</h4>
+					<br>
+					<p>Autor: Jesús Sáenz Niño</p>
+					<br><br>
+
+				</section>
+				<!--Introducción e 'indice'-->
+				<section style="height:100%">
+					<div style="width:100%; display:inline-block;">
+
+						<h3 style="float: left;padding:1rem;box-shadow:0 0 2rem #eeeeee;
+						border-radius:1rem;margin-left:1rem">
+						Índice </h3>
+					</div>
+					<br><br><br><br><br>
+					<ol>
+						<li> <h5>Descripción del problema</h5> </li><br>
+						<li> <h5>Enfoque al proyecto</h5> </li><br>
+						<li> <h5>Solución</h5> </li><br>
+						<li> <h5>Conclusiones</h5> </li><br>
+					</ol>
+				</section>
+<!-- Descripción del problema -->
+				<section>
+				<!-- diagrama -->
+				<section style="height:100%">
+					<div style="width:100%; height:auto; display:inline-block;">
+						<h3 style="float: left;padding:1rem;box-shadow:0 0 2rem #eeeeee;
+						border-radius:1rem;color:#bbbbbb">
+						Problema </h3>
+						<h3 style="float: left;padding:1rem;box-shadow:0 0 2rem #eeeeee;
+						border-radius:1rem;margin-left:1rem">
+						Análisis Modal Experimental </h3>
+					</div>
+					<br><br><br><br><br>
+					<iframe src="img/diagramaio.html" width="100%" height=""></iframe>
+				</section>
+				<!-- tabla1 -->
+				<section data-auto-animate style="height:100%">
+					<div style="width:100%; height:auto; display:inline-block;">
+						<h3 style="float: left;padding:1rem;box-shadow:0 0 2rem #eeeeee;
+						border-radius:1rem;color:#bbbbbb">
+						Problema </h3>
+						<h3 style="float: left;padding:1rem;box-shadow:0 0 2rem #eeeeee;
+						border-radius:1rem;margin-left:1rem">
+						Análisis Modal Experimental </h3>
+					</div>
+					<br><br>
+					<table style="width:100%;">
+						<tr>
+							<th style="border:none">Entrada </th>
+							<th style="border:none">Salida</th>
+						</tr>
+						<br>
+						<tr>
+							<td style="border:none;color:#000000">Martillo de impactos</td>
+							<td style="border:none;color:#000000">Acelerómetros</td>
+						</tr>
+						<br>
+						<tr>
+							<td style="border:none">Shaker</td>
+							<td style="border:none">Láser</td>
+						</tr>
+						<br>
+						<tr>
+							<td style="border:none">Cargas reales</td>
+							<td style="border:none">Otros</td>
+						</tr>
+					</table>
+				</section>
+				<!-- tabla2 -->
+				<section data-auto-animate style="height:100%">
+					<div style="width:100%; height:auto; display:inline-block;">
+						<h3 style="float: left;padding:1rem;box-shadow:0 0 2rem #eeeeee;
+						border-radius:1rem;color:#bbbbbb">
+						Problema </h3>
+						<h3 style="float: left;padding:1rem;box-shadow:0 0 2rem #eeeeee;
+						border-radius:1rem;margin-left:1rem">
+						Análisis Modal Experimental </h3>
+					</div>
+					<br><br>
+					<table style="width:100%;color:#aaaaaa">
+						<tr>
+							<th style="border:none">Entrada </th>
+							<th style="border:none">Salida</th>
+						</tr>
+						<br>
+						<tr>
+							<td style="border:none;color:#000000">Martillo de impactos</td>
+							<td style="border:none;color:#000000">Acelerómetros</td>
+						</tr>
+						<br>
+						<tr>
+							<td style="border:none">Shaker</td>
+							<td style="border:none">Láser</td>
+						</tr>
+						<br>
+						<tr>
+							<td style="border:none">Cargas reales</td>
+							<td style="border:none">Otros</td>
+						</tr>
+					</table>
+				</section>
+				<!-- Señal fuerza -->
+				<section style="height:100%">
+					<div style="width:100%; height:auto; display:inline-block;">
+						<h3 style="float: left;padding:1rem;box-shadow:0 0 2rem #eeeeee;
+						border-radius:1rem;color:#bbbbbb">
+						Problema </h3>
+						<h3 style="float: left;padding:1rem;box-shadow:0 0 2rem #eeeeee;
+						border-radius:1rem;margin-left:1rem">
+						Señal de fuerza </h3>
+					</div>
+					<iframe src="img/fuerza.html" width="100%" height="900rem"></iframe>
+
+					<br><br>
+
+				</section>
+				<!-- señal aceleración -->
+				<section style="height:100%">
+					<div style="width:100%; height:auto; display:inline-block;">
+						<h3 style="float: left;padding:1rem;box-shadow:0 0 2rem #eeeeee;
+						border-radius:1rem;color:#bbbbbb">
+						Problema </h3>
+						<h3 style="float: left;padding:1rem;box-shadow:0 0 2rem #eeeeee;
+						border-radius:1rem;margin-left:1rem">
+						Señal de aceleración </h3>
+					</div>
+					<iframe src="img/aceleracion.html" width="100%" height="900rem"></iframe>
+
+					<br><br>
+
+				</section>
+				<!-- Transformación -->
+				<section style="height:100%">
+					<div style="width:100%; height:auto; display:inline-block;">
+						<h3 style="float: left;padding:1rem;box-shadow:0 0 2rem #eeeeee;
+						border-radius:1rem;color:#bbbbbb">
+						Problema </h3>
+						<h3 style="float: left;padding:1rem;box-shadow:0 0 2rem #eeeeee;
+						border-radius:1rem;margin-left:1rem">
+						Transformación a frecuencia </h3>
+					</div>
+					<br><br>
+
+				</section>
+				<!-- Diagramas -->
+				<section style="height:100%">
+					<div style="width:100%; height:auto; display:inline-block;">
+						<h3 style="float: left;padding:1rem;box-shadow:0 0 2rem #eeeeee;
+						border-radius:1rem;color:#bbbbbb">
+						Problema </h3>
+						<h3 style="float: left;padding:1rem;box-shadow:0 0 2rem #eeeeee;
+						border-radius:1rem;margin-left:1rem">
+						Diagrama bode</h3>
+					</div>
+					<iframe src="img/bode.html" width="100%" height="900rem" data-preload></iframe>
+					<br><br>
+				</section>
+				<section style="height:100%">
+					<div style="width:100%; height:auto; display:inline-block;">
+						<h3 style="float: left;padding:1rem;box-shadow:0 0 2rem #eeeeee;
+						border-radius:1rem;color:#bbbbbb">
+						Problema </h3>
+						<h3 style="float: left;padding:1rem;box-shadow:0 0 2rem #eeeeee;
+						border-radius:1rem;margin-left:1rem">
+						Diagrama nyquist</h3>
+					</div>
+					<iframe src="img/nyquist.html" width="100%" height="900rem"></iframe>
+					<br><br>
+				</section>
+
+
+				</section>
+<!-- Enfoque de proyecto-->
+				<section>
+				<!-- Objetivos-->
+				<section data-auto-animate style="height:100%">
+					<div style="width:100%; height:auto; display:inline-block;">
+						<h3 style="float: left;padding:1rem;box-shadow:0 0 2rem #eeeeee;
+						border-radius:1rem;color:#bbbbbb">
+						Enfoque </h3>
+						<h3 style="float: left;padding:1rem;box-shadow:0 0 2rem #eeeeee;
+						border-radius:1rem;margin-left:1rem">
+						Objetivos </h3>
+					</div>
+					<br>
+					<br>
+					<ol style="">
+					<li><b>Analizar las señales temporales</b> </li>
+					<li><b>Calcular las frf y los modos</b> </li>
+					<li><b>Obtener una estructura sólida</b> </li>
+					<li><b>Precisión </b></li>
+					</ol>
+				</section>
+				<section data-auto-animate style="height:100%">
+					<div style="width:100%; height:auto; display:inline-block;">
+						<h3 style="float: left;padding:1rem;box-shadow:0 0 2rem #eeeeee;
+						border-radius:1rem;color:#bbbbbb">
+						Enfoque </h3>
+						<h3 style="float: left;padding:1rem;box-shadow:0 0 2rem #eeeeee;
+						border-radius:1rem;margin-left:1rem">
+						Objetivos </h3>
+					</div>
+					<br>
+					<br>
+					<ol style="">
+						<li><b>Analizar las señales temporales</b> </li>
+						<p> Obtener los estadísticos RMS, VDV y MTVV para el análisis de la estructura. Filtrar, modificar la frecuencia de muestreo y eliminar las tendencias de la señal. </p>
+						<li><b>Calcular las frf y los modos</b> </li>
+						<li><b>Obtener una estructura sólida</b> </li>
+						<li><b>Precisión </b></li>
+					</ol>
+				</section>
+				<section data-auto-animate style="height:100%">
+					<div style="width:100%; height:auto; display:inline-block;">
+						<h3 style="float: left;padding:1rem;box-shadow:0 0 2rem #eeeeee;
+						border-radius:1rem;color:#bbbbbb">
+						Enfoque </h3>
+						<h3 style="float: left;padding:1rem;box-shadow:0 0 2rem #eeeeee;
+						border-radius:1rem;margin-left:1rem">
+						Objetivos </h3>
+					</div>
+					<br>
+					<br>
+					<ol style="">
+						<li><b>Analizar las señales temporales</b> </li>
+						<li><b>Calcular las frf y los modos</b> </li>
+						<p> Adecuar los datos para calcular las funciones de respuesta en frecuencia y obtener los modos de resonacia con los métodos peak picking y circle fit. </p>
+						<li><b>Obtener una estructura sólida</b> </li>
+						<li><b>Precisión </b></li>
+					</ol>
+				</section>
+				<section data-auto-animate style="height:100%">
+					<div style="width:100%; height:auto; display:inline-block;">
+						<h3 style="float: left;padding:1rem;box-shadow:0 0 2rem #eeeeee;
+						border-radius:1rem;color:#bbbbbb">
+						Enfoque </h3>
+						<h3 style="float: left;padding:1rem;box-shadow:0 0 2rem #eeeeee;
+						border-radius:1rem;margin-left:1rem">
+						Objetivos </h3>
+					</div>
+					<br>
+					<br>
+					<ol style="">
+						<li><b>Analizar las señales temporales</b> </li>
+						<li><b>Calcular las frf y los modos</b> </li>
+						<li><b>Obtener una estructura sólida</b> </li>
+						<p> Permite continuar el desarrollo de la aplicación sin modificar la estructura de la misma, lo que facilita que se pueda continuar con su desarrollo. </p>
+						<li><b>Precisión </b></li>
+					</ol>
+				</section>
+				<section data-auto-animate style="height:100%">
+					<div style="width:100%; height:auto; display:inline-block;">
+						<h3 style="float: left;padding:1rem;box-shadow:0 0 2rem #eeeeee;
+						border-radius:1rem;color:#bbbbbb">
+						Enfoque </h3>
+						<h3 style="float: left;padding:1rem;box-shadow:0 0 2rem #eeeeee;
+						border-radius:1rem;margin-left:1rem">
+						Objetivos </h3>
+					</div>
+					<br>
+					<br>
+					<ol style="">
+						<li><b>Analizar las señales temporales</b> </li><br>
+						<li><b>Calcular las frf y los modos</b> </li><br>
+						<li><b>Obtener una estructura sólida</b> </li><br>
+						<li><b>Precisión </b></li>
+						<p>Obtener una precisión adecuada en todas las operaciones, especialmente en los métodos de análisis modal peak picking y circle fit.</p>
+
+					</ol>
+				</section>
+
+				<!-- Python -->
+				<section style="height:100%">
+					<div style="width:100%; height:auto; display:inline-block;">
+						<h3 style="float: left;padding:1rem;box-shadow:0 0 2rem #eeeeee;
+						border-radius:1rem;color:#bbbbbb">
+						Enfoque </h3>
+						<h3 style="float: left;padding:1rem;box-shadow:0 0 2rem #eeeeee;
+						border-radius:1rem;margin-left:1rem">
+						Python </h3>
+					</div>
+					<br>
+					<br>
+					<ol style="">
+						<li><b>Coste</b> </li><br>
+						<li><b>Rendimiento y funcionalidad</b> </li><br>
+						<li><b>Faculidad de uso</b> </li><br>
+						<li><b>Integración en otros entornos </b></li>
+
+					</ol>
+				</section>
+				<section style="height:100%">
+					<div style="width:100%; height:auto; display:inline-block;">
+						<h3 style="float: left;padding:1rem;box-shadow:0 0 2rem #eeeeee;
+						border-radius:1rem;color:#bbbbbb">
+						Enfoque </h3>
+						<h3 style="float: left;padding:1rem;box-shadow:0 0 2rem #eeeeee;
+						border-radius:1rem;margin-left:1rem">
+						Python </h3>
+					</div>
+					<br>
+					<br>
+					<ol style="">
+						<li><b>Coste</b> </li><br>
+						<p>El código es de libre acceso y gratuito, tanto python como sus librerías asociadas. Sin embargo <b>no se incluye una garantía ni soporte</b>, en el caso de una empresa se deben dedicar recursos al soporte del software. </p>
+						<li><b>Rendimiento y funcionalidad</b> </li><br>
+						<li><b>Faculidad de uso</b> </li><br>
+						<li><b>Integración en otros entornos </b></li>
+
+					</ol>
+
+				</section>
+				<section style="height:100%">
+					<div style="width:100%; height:auto; display:inline-block;">
+						<h3 style="float: left;padding:1rem;box-shadow:0 0 2rem #eeeeee;
+						border-radius:1rem;color:#bbbbbb">
+						Enfoque </h3>
+						<h3 style="float: left;padding:1rem;box-shadow:0 0 2rem #eeeeee;
+						border-radius:1rem;margin-left:1rem">
+						Python </h3>
+					</div>
+					<br>
+					<br>
+					<ol style="">
+						<li><b>Coste</b> </li><br>
+						<li><b>Rendimiento y funcionalidad</b> </li><br>
+						<p>Es relativamente superior a otros lenguajes como matlab, ya que determinadas funciones se pueden ejecutar directamente en c/c++. Sin embargo, si no se acude a librerías en c, es similar o inferior.</p>
+						<li><b>Faculidad de uso</b> </li><br>
+						<li><b>Integración en otros entornos </b></li>
+
+					</ol>
+
+				</section>
+				<section style="height:100%">
+					<div style="width:100%; height:auto; display:inline-block;">
+						<h3 style="float: left;padding:1rem;box-shadow:0 0 2rem #eeeeee;
+						border-radius:1rem;color:#bbbbbb">
+						Enfoque </h3>
+						<h3 style="float: left;padding:1rem;box-shadow:0 0 2rem #eeeeee;
+						border-radius:1rem;margin-left:1rem">
+						Python </h3>
+					</div>
+					<br>
+					<br>
+					<ol style="">
+						<li><b>Coste</b> </li><br>
+						<li><b>Rendimiento y funcionalidad</b> </li><br>
+						<li><b>Faculidad de uso</b> </li><br>
+						<p>La sintaxis es muy sencilla de aprender y fácil de entender. Además, python se encarga de organizar la memoria.</p>
+						<li><b>Integración en otros entornos </b></li>
+
+					</ol>
+
+				</section>
+				<section style="height:100%">
+					<div style="width:100%; height:auto; display:inline-block;">
+						<h3 style="float: left;padding:1rem;box-shadow:0 0 2rem #eeeeee;
+						border-radius:1rem;color:#bbbbbb">
+						Enfoque </h3>
+						<h3 style="float: left;padding:1rem;box-shadow:0 0 2rem #eeeeee;
+						border-radius:1rem;margin-left:1rem">
+						Python </h3>
+					</div>
+					<br>
+					<br>
+					<ol style="">
+						<li><b>Coste</b> </li><br>
+						<li><b>Rendimiento y funcionalidad</b> </li><br>
+						<li><b>Faculidad de uso</b> </li><br>
+						<li><b>Integración en otros entornos </b></li>
+						<p>Existen una gran cantidad de librerías y frameworks para el desarrollo web, redes neuronales, estadística,...</p>
+
+					</ol>
+
+				</section>
+
+
+				</section>
+
+<!-- Solución obtenida -->
+				<section>
+				<!-- Organización -->
+				<section style="height:100%">
+					<div style="width:100%; height:auto; display:inline-block;">
+						<h3 style="float: left;padding:1rem;box-shadow:0 0 2rem #eeeeee;
+						border-radius:1rem;color:#bbbbbb">
+						Solución </h3>
+						<h3 style="float: left;padding:1rem;box-shadow:0 0 2rem #eeeeee;
+						border-radius:1rem;margin-left:1rem">
+						Organización del trabajo </h3>
+						</div>
+						<iframe src="img/clases.html" style="width:100%;height: 200em"></iframe>
+
+
+				</section>
+				<!-- Organización -->
+				<section style="height:100%">
+					<div style="width:100%; height:auto; display:inline-block;">
+						<h3 style="float: left;padding:1rem;box-shadow:0 0 2rem #eeeeee;
+						border-radius:1rem;color:#bbbbbb">
+						Solución </h3>
+						<h3 style="float: left;padding:1rem;box-shadow:0 0 2rem #eeeeee;
+						border-radius:1rem;margin-left:1rem">
+						Organización del trabajo </h3>
+					</div>
+					<table style="width:100%;">
+						<tr>
+							<th style="border:none"> Tiempo </th>
+							<th style="border:none"> Frecuencia </th>
+							<th style="border:none"> Modal </th>
+							<th style="border:none"> Graficas </th>
+						</tr>
+						<tr>
+							<td style="border:none;" >RMS móvil</td>
+							<td style="border:none;">Cambio de variables</td>
+							<td style="border:none;">Peak picking</td>
+							<td style="border:none;">Gráficas multivariable</td>
+						</tr>
+
+						<tr>
+							<td style="border:none">RMS </td>
+							<td style="border:none">Integrar</td>
+							<td style="border:none">Circle fit</td>
+							<td style="border:none">Bode</td>
+						</tr>
+						<tr>
+							<td style="border:none">MTVV</td>
+							<td style="border:none"></td>
+							<td style="border:none"></td>
+							<td style="border:none">Nyquist</td>
+						</tr>
+						<tr>
+							<td style="border:none">VDV</td>
+							<td style="border:none"></td>
+							<td style="border:none"></td>
+							<td style="border:none"></td>
+						</tr>
+						<tr>
+							<td style="border:none">Filtro</td>
+							<td style="border:none"></td>
+							<td style="border:none"></td>
+							<td style="border:none"></td>
+						</tr>
+						<tr>
+							<td style="border:none">Detrend</td>
+							<td style="border:none"></td>
+							<td style="border:none"></td>
+							<td style="border:none"></td>
+						</tr>
+						<tr>
+							<td style="border:none">Resample</td>
+							<td style="border:none"></td>
+							<td style="border:none"></td>
+							<td style="border:none"></td>
+						</tr>
+						<tr>
+							<td style="border:none">FRF</td>
+							<td style="border:none"></td>
+							<td style="border:none"></td>
+							<td style="border:none"></td>
+						</tr>
+					</table>
+
+				</section>
+				<!-- Presets -->
+				<section style="height:100%">
+					<div style="width:100%; height:auto; display:inline-block;">
+						<h3 style="float: left;padding:1rem;box-shadow:0 0 2rem #eeeeee;
+						border-radius:1rem;color:#bbbbbb">
+						Solución </h3>
+						<h3 style="float: left;padding:1rem;box-shadow:0 0 2rem #eeeeee;
+						border-radius:1rem;margin-left:1rem">
+						Presets</h3>
+					</div>
+					<pre><code data-line-numbers>
+#
+#------------------------------------------------
+# Plantilla para guardar los valores por defecto
+#------------------------------------------------
+#
+# Esta plantilla se debe editar siguiendo las sintaxis de
+# Python, cualquier grafia que no sea propia de Python
+# resultara en un error de programa. De la misma forma,
+# si se cambia el nombre de cualquiera de las variables
+# resultara en un error de la funcion que dependa de dicha
+# variable.
+#
+
+ventana_rms = 1
+solape_rms = 0.5
+
+incremento_vdv = 1
+
+orden_filtro = 4
+frecuencia_filtro = 200
+
+samplerate_resample = 512
+
+# potencias de 2: 256, 512, 1024, 2048, 4096, 8192, 16384, 32768, 65536, 131072
+
+ventana_frf = 'boxcar'
+nperseg_frf = 16384
+noverlap_frf = 0
+nfft_frf = 16384
+
+threshold_frf = 50
+</code></pre>
+				</section>
+
+				<!-- Código interno -->
+				<section style="height:100%">
+					<div style="width:100%; height:auto; display:inline-block;">
+						<h3 style="float: left;padding:1rem;box-shadow:0 0 2rem #eeeeee;
+						border-radius:1rem;color:#bbbbbb">
+						Solución </h3>
+						<h3 style="float: left;padding:1rem;box-shadow:0 0 2rem #eeeeee;
+						border-radius:1rem;margin-left:1rem">
+						Organización del trabajo </h3>
+					</div>
+
+				</section>
+
+				<!-- Programa -->
+				<section data-background-iframe="http://127.0.0.1:5000/"
+					data-background-interactive>
+				</section>
+				<!-- Ejemplo1 -->
+				<section style="height:100%">
+					<div style="width:100%; height:auto; display:inline-block;">
+						<h3 style="float: left;padding:1rem;box-shadow:0 0 2rem #eeeeee;
+						border-radius:1rem;color:#bbbbbb">
+						Solución </h3>
+						<h3 style="float: left;padding:1rem;box-shadow:0 0 2rem #eeeeee;
+						border-radius:1rem;margin-left:1rem">
+						Ejemplo 1 </h3>
+					</div>
+
+					<pre><code data-line-numbers>
+import numpy as np
+import amodal as am
+import graficas as gr
+
+'''Definicion de variables'''
+RUTA = '/home/jesus/1tfg/codigo/Programa_Pycharm/FlaskFolder/static/upload_xlsx/PruebaViga200213-1.xlsx'
+
+# Se carga la senal de tiempo
+senal = am.Tiempo()
+senal.lectura(RUTA)
+# Obtener la frf, se integra para obtener movilidad
+frf = senal.get_frf()
+frf.integrar()
+# se escribe un fichero con el diagrama bode
+gr.bode_html(frf,'bode.html')
+# Definimos el rango de frecuencias a analizar, y la clase modos
+rangos_modos = np.array([[31,33]])
+modos = am.Modal(frf,rango_unico=rangos_modos)
+# Se calcula el circle fit, exportando las graficas de debug
+modos.circle_fit(debug_sp=True, debug_psi=True ,debug_nyquist=True )
+					</pre></code>
+				</section>
+				<!-- resultado1 -->
+				<section style="height:100%">
+					<div style="width:100%; height:auto; display:inline-block;">
+						<h3 style="float: left;padding:1rem;box-shadow:0 0 2rem #eeeeee;
+						border-radius:1rem;color:#bbbbbb">
+						Problema </h3>
+						<h3 style="float: left;padding:1rem;box-shadow:0 0 2rem #eeeeee;
+						border-radius:1rem;margin-left:1rem">
+						Análisis Modal Experimental </h3>
+					</div>
+					<iframe src="img/sp-0.html" width="100%" height="300px"></iframe>
+					<iframe src="img/ny-0.html" width="100%" height="300px"></iframe>
+					<iframe src="img/psi-0.html" width="100%" height="300px"></iframe>
+				</section>
+				<!-- Ejemplo2 -->
+				<section style="height:100%">
+					<div style="width:100%; height:auto; display:inline-block;">
+						<h3 style="float: left;padding:1rem;box-shadow:0 0 2rem #eeeeee;
+						border-radius:1rem;color:#bbbbbb">
+						Solución </h3>
+						<h3 style="float: left;padding:1rem;box-shadow:0 0 2rem #eeeeee;
+						border-radius:1rem;margin-left:1rem">
+						Ejemplo 2 </h3>
+					</div>
+
+					<pre><code data-line-numbers class="Python"><script type="text/template">
+import numpy as np
+import amodal as am
+import graficas as gr
+import csv
+'''PARAMETROS'''
+RUTA = '/home/jesus/1tfg/codigo/Programa_Pycharm/FlaskFolder/static/upload_xlsx/VigaMaderaA-3-01.xlsx'
+NFFT = np.array([1,2,3,4]) # factor por el que se multiplica nperseg
+NPERSEG = np.array([2048, 4096, 8192, 16384])
+RANGO = np.array([[1,2],[3,7],[11,14],[19,24],[29,35]])
+senal = am.Tiempo()
+senal.lectura(RUTA)
+# Bucle para calcular todos los parametros
+for nfft in NFFT:
+    for nperseg in NPERSEG:
+        # Se calcula la frf
+        am.preset.nperseg_frf = nperseg
+        am.preset.nfft_frf = nfft*nperseg
+        frf = senal.get_frf()
+        frf.integrar()
+        frf.integrar()
+        # Se calculan los modos de resonancia
+        modos = am.Modal(frf,rango_unico=RANGO)
+        modos.peak_picking()
+        modos.promedio()
+        # Se guardan los datos en tablas csv, como texto.
+        with open('frec-{}-{}'.format(nperseg,nfft) ,'w') as file:
+            writer = csv.writer(file,delimiter='\t')
+            for acelerometro in modos.frec_resonancia:
+                acelerometro = np.round(acelerometro,decimals=5)
+                writer.writerow(acelerometro)
+            writer.writerow(np.round(modos.frec_resonancia_media,decimals=5))
+        with open('amor-{}-{}'.format(nperseg,nfft) ,'w') as file:
+            writer = csv.writer(file,delimiter='\t')
+            for acelerometro in modos.amortiguamiento:
+                acelerometro = np.round(acelerometro,decimals=5)
+                writer.writerow(acelerometro)
+            writer.writerow(np.round(modos.amortiguamiento_medio,decimals=5))
+					</script></pre></code>
+				</section>
+				<!-- Ejemplo3 -->
+				<section style="height:100%">
+					<div style="width:100%; height:auto; display:inline-block;">
+						<h3 style="float: left;padding:1rem;box-shadow:0 0 2rem #eeeeee;
+						border-radius:1rem;color:#bbbbbb">
+						Solución </h3>
+						<h3 style="float: left;padding:1rem;box-shadow:0 0 2rem #eeeeee;
+						border-radius:1rem;margin-left:1rem">
+						Ejemplo 3 </h3>
+					</div>
+
+					<pre><code data-line-numbers class="Python">
+import numpy as np
+import amodal as am
+import graficas as gr
+'''PARAMETROS'''
+RUTA = '/home/jesus/1tfg/codigo/Programa_Pycharm/FlaskFolder/static/upload_xlsx/VigaMaderaA-3-01.xlsx'
+VENTANA = 3 # Ventana en Hz
+AVANCE =  0.25  # Avance en tanto por uno
+# Calculamos la frf y creamos la clase modos
+senal = am.Tiempo()
+senal.lectura(RUTA)
+frf = senal.get_frf()
+frf.integrar()
+rango = np.array([[1,2]])
+modos = am.Modal(frf,rango_unico= rango)
+# Definimos la ventana, avance, y el numero final de elementos
+ventana = int(frf.frecrate * VENTANA)
+avance = int(ventana * AVANCE)
+tamano = int((frf.axis_1 + avance-ventana-1)//avance)
+# Se definen dos vectores vacios para guardar los datos
+# Frecs guarda aquellos datos que no tienen errores en ninguna senal
+frecs = np.zeros(0)
+# Frecs1 guarda aquellos datos que tienen un error en alguna senal
+frecs1 = np.zeros(0)
+for i in range(tamano):
+    # Calculamos la ventana y los modos en cada iterecion
+    frec = np.array([[i*avance/modos.frf.frecrate,(i*avance+ventana)/modos.frf.frecrate]])
+    modos.adaptar_rango(frec)
+    modos.circle_fit()
+    # Se detectan cuantos valores '0' hay en los modos
+    error_amortiguamiento = np.count_nonzero(modos.amortiguamiento == 0)
+    if error_amortiguamiento==0:
+        modos.promedio()
+        frecs = np.append(frecs, modos.frec_resonancia_media[0])
+    if error_amortiguamiento<=2:
+        modos.promedio()
+        frecs1 = np.append(frecs1, modos.frec_resonancia_media[0])
+print('Las frecuencias de resonancia sin errores en los amortiguamientos son:\n', frecs)
+print('Las frecuencias de resonancia con menos de dos errores en el amortiguamiento son:\n', frecs1)
+# Se combinan las frecuencias que estan muy cerca,
+# se halla la media de los valores.
+resonancias = np.zeros([0])
+cache = np.zeros([0])
+for i in range(len(frecs1)):
+    if i == 0:
+        resonancias = np.append(resonancias,frecs1[i])
+        continue
+    if abs(frecs1[i]- frecs1[i-1])  < 1:
+        cache = np.append(cache,frecs1[i])
+        resonancias[-1] = np.mean(cache)
+    else:
+        resonancias = np.append(resonancias,frecs1[i])
+        cache = np.zeros([0])
+print('Las frecuencias de resonancia son:',resonancias)
+					</pre></code>
+				</section>
+
+
+
+				</section>
+				<!-- Conclusiones -->
+				<section>
+				<!-- problemas -->
+				<section style="height:100%">
+					<div style="width:100%; height:auto; display:inline-block;">
+						<h3 style="float: left;padding:1rem;box-shadow:0 0 2rem #eeeeee;
+						border-radius:1rem;color:#bbbbbb">
+						Conclusiones </h3>
+						<h3 style="float: left;padding:1rem;box-shadow:0 0 2rem #eeeeee;
+						border-radius:1rem;margin-left:1rem">
+						Análisis general del programa </h3>
+					</div>
+					<ol>
+						<li> Estructura robusta que proporciona un uso bastante simple.</li>
+						<li> Página web con una gran cantidad de opciones incorporadas. </li>
+						<li> Código relativamente robusto ante entradas inesperadas </li>
+					</ol>
+				</section>
+				<!-- Lineas futuras -->
+				<section style="height:100%">
+					<div style="width:100%; height:auto; display:inline-block;">
+						<h3 style="float: left;padding:1rem;box-shadow:0 0 2rem #eeeeee;
+						border-radius:1rem;color:#bbbbbb">
+						Conclusiones </h3>
+						<h3 style="float: left;padding:1rem;box-shadow:0 0 2rem #eeeeee;
+						border-radius:1rem;margin-left:1rem">
+						Líneas futuras </h3>
+					</div>
+					<ol>
+						<li> Mejorar la funcionalidad del programa: </li>
+						<ol>
+							<li> Añadir más opciones a las funciones. </li>
+							<li> Incluir métodos de análisis multimodo. </li>
+						</ol>
+						<li>Mejorar la infraestructura informática: </li>
+						<ol>
+							<li>Mejorar la compatibilidad con otros formatos de datos. </li>
+							<li>Mejora de la visualización de datos. </li>
+						</ol>
+					</ol>
+				</section>
+
+
+
+
+				</section>
+
+
+
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
